@@ -14,11 +14,12 @@ let package = Package(
     products: [
         .library(
             name: "OpenCV",
+            type: .dynamic,
             targets: ["opencv2", "opencv2-dependencies"]),
     ],
     targets: [
         .binaryTarget(name: "opencv2",
-                      url: "https://github.com/yeatse/opencv-spm/releases/download/\(version)/opencv2.xcframework.zip",
+                      url: "https://github.com/demianjun/opencv-spm/releases/download/\(version)/opencv2.xcframework.zip",
                       checksum: checksum),
         .target(
             name: "opencv2-dependencies",
