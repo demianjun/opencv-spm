@@ -14,7 +14,6 @@ let package = Package(
     products: [
         .library(
             name: "OpenCV",
-            type: .dynamic,
             targets: ["opencv2", "opencv2-dependencies"]),
     ],
     targets: [
