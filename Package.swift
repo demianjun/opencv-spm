@@ -17,7 +17,7 @@ let package = Package(
             targets: ["opencv2", "opencv2-dependencies"]),
     ],
     targets: [
-        .binaryTarget(name: "opencv2",
+        .binaryTarget(name: "opencv-4.9.0-ios-framework",
                       url: "https://github.com/opencv/opencv/releases/download/4.9.0/opencv-4.9.0-ios-framework.zip",
                       checksum: checksum),
         .target(
